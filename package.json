@@ -2,11 +2,18 @@
   "name": "next-configure-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.20.0",
+    "npm": ">=10.9.3",
+    "pnpm": ">=10.20.0",
+    "yarn": "please-use-pnpm-or-npm"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "16.0.3",
@@ -19,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
+    "prettier": "^3.6.2",
     "typescript": "^5"
   }
 }
